@@ -18,8 +18,9 @@ namespace Pixelator.Core
 		private byte[] pixels;
 		private int width;
 		private int height;
+        private WriteableBitmap bitmap;
 
-		public SimpleBitmap(IStorageFile file, int width, int height)
+        public SimpleBitmap(IStorageFile file, int width, int height)
 		{
 			this.file = file;
 			this.width = width;
@@ -38,6 +39,8 @@ namespace Pixelator.Core
 					pixels = new Byte[4 * width * height];
 					buffer.Read(pixels, 0, pixels.Length);
 				}
+
+                this.bitmap = bitmap;
 			}
 		}
 
@@ -69,7 +72,6 @@ namespace Pixelator.Core
 
 		public WriteableBitmap GetImage()
 		{
-			var bitmap = new WriteableBitmap(width, height);
 			using (var buffer = bitmap.PixelBuffer.AsStream())
 			{
 				buffer.Position = 0;

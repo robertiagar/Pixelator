@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4590B375-5C6D-4A77-A625-4AB4302556BA}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,6 +15,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.WindowsRT", "Pixelator.WindowsRT\Pixelator.WindowsRT.csproj", "{5665A1DE-E8C6-44A9-AADF-A8DBF6C0CCBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.Core", "Pixelator.Core\Pixelator.Core.csproj", "{15B83E1E-5C05-46EC-A7CC-8694F9713E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.WindowsUWP", "Pixelator.WindowsUWP\Pixelator.WindowsUWP.csproj", "{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,6 +80,28 @@ Global
 		{15B83E1E-5C05-46EC-A7CC-8694F9713E5E}.Release|x64.Build.0 = Release|x64
 		{15B83E1E-5C05-46EC-A7CC-8694F9713E5E}.Release|x86.ActiveCfg = Release|x86
 		{15B83E1E-5C05-46EC-A7CC-8694F9713E5E}.Release|x86.Build.0 = Release|x86
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|Any CPU.ActiveCfg = Debug|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|Any CPU.Build.0 = Debug|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|Any CPU.Deploy.0 = Debug|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|ARM.Build.0 = Debug|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|ARM.Deploy.0 = Debug|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|x64.ActiveCfg = Debug|x64
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|x64.Build.0 = Debug|x64
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|x64.Deploy.0 = Debug|x64
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|x86.ActiveCfg = Debug|x86
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|x86.Build.0 = Debug|x86
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Debug|x86.Deploy.0 = Debug|x86
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|Any CPU.ActiveCfg = Release|x86
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|ARM.ActiveCfg = Release|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|ARM.Build.0 = Release|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|ARM.Deploy.0 = Release|ARM
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x64.ActiveCfg = Release|x64
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x64.Build.0 = Release|x64
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x64.Deploy.0 = Release|x64
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x86.ActiveCfg = Release|x86
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x86.Build.0 = Release|x86
+		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

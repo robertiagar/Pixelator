@@ -17,7 +17,7 @@ using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using Pixelator.Core.ViewModel;
 
-namespace Pixelator.WindowsRT.ViewModel
+namespace Pixelator.WindowsUWP.ViewModel
 {
     /// <summary>
     /// This class contains static references to all the view models in the
