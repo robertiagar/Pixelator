@@ -3,4 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartArguments>-i "D:\Projects\Pixalator\Pixalator\bin\Debug\pic.jpg" -r "D:\Projects\Pixalator\Pixalator\bin\Debug\result.jpg" -s 100</StartArguments>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
 </Project>
