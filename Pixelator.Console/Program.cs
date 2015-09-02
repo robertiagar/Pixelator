@@ -131,8 +131,6 @@ namespace Pixelator
 						// get the pixel color in the center of the soon to be pixelated area
 						Color pixel = lockBitmap.GetPixel(xx + offsetX, yy + offsetY);
 
-
-
 						// for each pixel in the pixelate size, set it to the center color
 						for (Int32 x = xx; x < xx + pixelateSize && x < image.Width; x++)
 							for (Int32 y = yy; y < yy + pixelateSize && y < image.Height; y++)
@@ -140,7 +138,6 @@ namespace Pixelator
 					}
 				}
 			}
-
 			return image;
 		}
 
