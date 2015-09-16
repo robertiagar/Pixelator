@@ -137,12 +137,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pixelator.Core\Pixelator.Core.csproj">
-      <Project>{15b83e1e-5c05-46ec-a7cc-8694f9713e5e}</Project>
-      <Name>Pixelator.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\windows81\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>
@@ -159,6 +153,12 @@
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pixelator.Core\Pixelator.Core.csproj">
+      <Project>{15b83e1e-5c05-46ec-a7cc-8694f9713e5e}</Project>
+      <Name>Pixelator.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

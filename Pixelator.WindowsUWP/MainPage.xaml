@@ -32,6 +32,8 @@
 					  Command="{Binding LoadImagesCommand}"/>
             <Button Content="Pixelate"
 					  Command="{Binding PixelateImageCommand}"/>
+            <Button Content="Set as Background"
+                    Click="Button_Click"/>
             <TextBlock Text="Pixelate Size" 
                        Style="{StaticResource BaseTextBlockStyle}"
                        VerticalAlignment="Center"/>

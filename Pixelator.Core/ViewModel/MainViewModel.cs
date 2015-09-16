@@ -19,6 +19,12 @@ namespace Pixelator.Core.ViewModel
         {
             this.LoadImagesCommand = new RelayCommand(async () => await LoadImageAsync());
             this.PixelateImageCommand = new RelayCommand(async () => await PixelateAsync());
+            this.SetAsBackgroundCommand = new RelayCommand(async () => await SetAsBackgroundAsync());
+        }
+
+        private async Task SetAsBackgroundAsync()
+        {
+            await Task.Delay(0);
         }
 
         public BitmapSource OriginalImage
@@ -50,6 +56,7 @@ namespace Pixelator.Core.ViewModel
 
         public ICommand LoadImagesCommand { get; private set; }
         public ICommand PixelateImageCommand { get; private set; }
+        public ICommand SetAsBackgroundCommand { get; private set; }
 
         private async Task LoadImageAsync()
         {

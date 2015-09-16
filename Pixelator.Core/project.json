@@ -1,0 +1,9 @@
+{
+  "supports": {},
+  "dependencies": {
+    "MvvmLight": "5.2.0"
+  },
+  "frameworks": {
+    ".NETCore,Version=v4.5.1": {}
+  }
+}
