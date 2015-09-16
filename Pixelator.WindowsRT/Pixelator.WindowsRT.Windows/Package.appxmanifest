@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
 
-  <Identity Name="7eb52999-e2dc-4d69-a9f9-e5b866eb896d"
+  <Identity Name="0629e884-956f-4f2b-83eb-3f4cad9a1413"
             Publisher="CN=riagar"
             Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>Pixelator.WindowsRT</DisplayName>
+    <DisplayName>Pixelator.WindowsRT.Windows</DisplayName>
     <PublisherDisplayName>riagar</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -23,12 +23,12 @@
   <Applications>
     <Application Id="App"
         Executable="$targetnametoken$.exe"
-        EntryPoint="Pixelator.WindowsRT.App">
+        EntryPoint="Pixelator.WindowsRT.Windows.App">
         <m2:VisualElements
-            DisplayName="Pixelator.WindowsRT"
+            DisplayName="Pixelator.WindowsRT.Windows"
             Square150x150Logo="Assets\Logo.png"
             Square30x30Logo="Assets\SmallLogo.png"
-            Description="Pixelator.WindowsRT"
+            Description="Pixelator.WindowsRT.Windows"
             ForegroundText="light"
             BackgroundColor="#464646">
             <m2:SplashScreen Image="Assets\SplashScreen.png" />
