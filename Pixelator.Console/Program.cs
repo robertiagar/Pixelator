@@ -30,7 +30,8 @@ namespace Pixelator
             stopwatch.Start();
             using (var image = Bitmap.FromFile(options.ImagePath))
             {
-                Console.WriteLine(string.Format("Image size: {0}x{1}\n", image.Width, image.Height));
+                Console.WriteLine(string.Format("Image size: {0}x{1}", image.Width, image.Height));
+                Console.WriteLine("Pixel size: {0}\n", options.PixelSize);
                 Console.WriteLine("Starting normal...");
                 using (var bitmap = new Bitmap(image))
                 {
