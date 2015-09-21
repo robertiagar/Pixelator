@@ -11,4 +11,4 @@
 All benchmarks were ran on an:
 * i7 4790k 
 * 8gb DDR3 RAM 
-* Crucial 256GB MX100 
+* Crucial 256GB MX100 SSD
