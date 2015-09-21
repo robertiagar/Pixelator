@@ -1,5 +1,8 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using Pixelator.UniversalNav.ViewModel;
+using System;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace Pixelator.UniversalNav.Views
 {
@@ -11,6 +14,11 @@ namespace Pixelator.UniversalNav.Views
         public PixelatedPicturesPage()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Messenger.Default.Send<LoadPixelatedImagesMessage>(null);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using Pixelator.UniversalNav.Extensions;
+using Pixelator.UniversalNav.Model;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -60,41 +61,5 @@ namespace Pixelator.UniversalNav.ViewModel
     {
     }
 
-    public class Picture : ObservableObject, IEquatable<Picture>
-    {
-        public Picture(string fileName, DateTime dateCreated, string filePath)
-        {
-            FileName = fileName;
-            DateCreated = dateCreated;
-            FilePath = filePath;
-            ImageSource = new BitmapImage();
-        }
-
-        public string FileName { get; set; }
-        public string FilePath { get; set; }
-        public DateTime DateCreated { get; set; }
-        public BitmapSource ImageSource { get; set; }
-
-        public async Task LoadImageAsync()
-        {
-            var file = await StorageFile.GetFileFromPathAsync(FilePath);
-            using (var fileStream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
-            {
-                // Set the image source to the selected bitmap.
-                var bitmapImage = new BitmapImage();
-
-                await ImageSource.SetSourceAsync(fileStream);
-                RaisePropertyChanged(() => ImageSource);
-            }
-        }
-
-        public bool Equals(Picture other)
-        {
-            if (this.FilePath == other.FilePath)
-            {
-                return true;
-            }
-            return false;
-        }
-    }
+   
 }

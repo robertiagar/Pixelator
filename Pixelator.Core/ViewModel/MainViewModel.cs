@@ -83,7 +83,7 @@ namespace Pixelator.Core.ViewModel
 
         private async Task PixelateAsync()
         {
-            PixelatedImage = await PixelatorBitmap.Pixelate(file, (BitmapImage)OriginalImage, PixelateSize);
+            PixelatedImage = await PixelatorBitmap.PixelateAsync(file, (BitmapImage)OriginalImage, PixelateSize);
         }
     }
 }

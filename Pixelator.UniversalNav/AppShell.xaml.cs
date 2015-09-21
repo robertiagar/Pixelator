@@ -27,12 +27,6 @@ namespace Pixelator.UniversalNav
             {
                 new NavMenuItem()
                 {
-                    Symbol = Symbol.Pictures,
-                    Label = "Pictures",
-                    DestinationPage = typeof(Views.PicturesPage)
-                },
-                new NavMenuItem()
-                {
                     Symbol = Symbol.Save,
                     Label = "Pixelated Images",
                     DestinationPage = typeof(Views.PixelatedPicturesPage)

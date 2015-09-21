@@ -26,6 +26,8 @@ namespace Pixelator.UniversalNav.ViewModel
             ////}
 
             SimpleIoc.Default.Register<PicturesViewModel>();
+            SimpleIoc.Default.Register<PixelatedPicturesViewModel>();
+            SimpleIoc.Default.Register<PixelatePictureViewModel>();
         }
 
         public PicturesViewModel Pictures
@@ -33,6 +35,22 @@ namespace Pixelator.UniversalNav.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<PicturesViewModel>();
+            }
+        }
+
+        public PixelatedPicturesViewModel PixelatedPictures
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<PixelatedPicturesViewModel>();
+            }
+        }
+
+        public PixelatePictureViewModel PixelatePicture
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<PixelatePictureViewModel>();
             }
         }
 

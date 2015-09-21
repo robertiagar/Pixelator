@@ -16,22 +16,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.Core", "Pixelator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.WindowsUWP", "Pixelator.WindowsUWP\Pixelator.WindowsUWP.csproj", "{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pixelator.WindowsRT", "Pixelator.WindowsRT", "{5B2DA600-91D8-496C-8720-2E51DC9B8C39}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Pixelator.WindowsRT.Shared", "Pixelator.WindowsRT\Pixelator.WindowsRT.Shared\Pixelator.WindowsRT.Shared.shproj", "{76C070EC-1615-40F7-8F3E-7FDC3F28895C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.WindowsRT.Windows", "Pixelator.WindowsRT\Pixelator.WindowsRT.Windows\Pixelator.WindowsRT.Windows.csproj", "{36783308-C874-4DDE-B1C8-0AEF4289D1C3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.WindowsRT.WindowsPhone", "Pixelator.WindowsRT\Pixelator.WindowsRT.WindowsPhone\Pixelator.WindowsRT.WindowsPhone.csproj", "{1505BE15-CAD2-4C4B-96A0-C223D44889A7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelator.UniversalNav", "Pixelator.UniversalNav\Pixelator.UniversalNav.csproj", "{73EB87AD-E986-4DA1-99BE-338EF83564AA}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Pixelator.WindowsRT\Pixelator.WindowsRT.Shared\Pixelator.WindowsRT.Shared.projitems*{36783308-c874-4dde-b1c8-0aef4289d1c3}*SharedItemsImports = 4
-		Pixelator.WindowsRT\Pixelator.WindowsRT.Shared\Pixelator.WindowsRT.Shared.projitems*{1505be15-cad2-4c4b-96a0-c223d44889a7}*SharedItemsImports = 4
-		Pixelator.WindowsRT\Pixelator.WindowsRT.Shared\Pixelator.WindowsRT.Shared.projitems*{76c070ec-1615-40f7-8f3e-7fdc3f28895c}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -91,50 +78,6 @@ Global
 		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x86.ActiveCfg = Release|x86
 		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x86.Build.0 = Release|x86
 		{0A7B0C2C-06B8-4E01-BC86-87F730682E8B}.Release|x86.Deploy.0 = Release|x86
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|ARM.ActiveCfg = Debug|ARM
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|ARM.Build.0 = Debug|ARM
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|ARM.Deploy.0 = Debug|ARM
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|x64.ActiveCfg = Debug|x64
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|x64.Build.0 = Debug|x64
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|x64.Deploy.0 = Debug|x64
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|x86.ActiveCfg = Debug|x86
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|x86.Build.0 = Debug|x86
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Debug|x86.Deploy.0 = Debug|x86
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|ARM.ActiveCfg = Release|ARM
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|ARM.Build.0 = Release|ARM
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|ARM.Deploy.0 = Release|ARM
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|x64.ActiveCfg = Release|x64
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|x64.Build.0 = Release|x64
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|x64.Deploy.0 = Release|x64
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|x86.ActiveCfg = Release|x86
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|x86.Build.0 = Release|x86
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3}.Release|x86.Deploy.0 = Release|x86
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|ARM.ActiveCfg = Debug|ARM
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|ARM.Build.0 = Debug|ARM
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|ARM.Deploy.0 = Debug|ARM
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|x86.ActiveCfg = Debug|x86
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|x86.Build.0 = Debug|x86
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Debug|x86.Deploy.0 = Debug|x86
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|ARM.ActiveCfg = Release|ARM
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|ARM.Build.0 = Release|ARM
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|ARM.Deploy.0 = Release|ARM
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|x64.ActiveCfg = Release|Any CPU
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|x86.ActiveCfg = Release|x86
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|x86.Build.0 = Release|x86
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7}.Release|x86.Deploy.0 = Release|x86
 		{73EB87AD-E986-4DA1-99BE-338EF83564AA}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{73EB87AD-E986-4DA1-99BE-338EF83564AA}.Debug|ARM.ActiveCfg = Debug|ARM
 		{73EB87AD-E986-4DA1-99BE-338EF83564AA}.Debug|ARM.Build.0 = Debug|ARM
@@ -158,10 +101,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{76C070EC-1615-40F7-8F3E-7FDC3F28895C} = {5B2DA600-91D8-496C-8720-2E51DC9B8C39}
-		{36783308-C874-4DDE-B1C8-0AEF4289D1C3} = {5B2DA600-91D8-496C-8720-2E51DC9B8C39}
-		{1505BE15-CAD2-4C4B-96A0-C223D44889A7} = {5B2DA600-91D8-496C-8720-2E51DC9B8C39}
 	EndGlobalSection
 EndGlobal

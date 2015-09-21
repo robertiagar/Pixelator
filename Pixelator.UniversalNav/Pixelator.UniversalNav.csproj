@@ -104,13 +104,14 @@
       <DependentUpon>PageHeader.xaml</DependentUpon>
     </Compile>
     <Compile Include="Extensions\MimeTypeExtensions.cs" />
+    <Compile Include="Model\Picrture.cs" />
     <Compile Include="NavMenuItem.cs" />
+    <Compile Include="OpenMenuFlyoutAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\PicturesViewModel.cs" />
+    <Compile Include="ViewModel\PixelatedPicturesViewModel.cs" />
+    <Compile Include="ViewModel\PixelatePictureViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="Views\PicturesPage.xaml.cs">
-      <DependentUpon>PicturesPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\PixelatedPicturesPage.xaml.cs">
       <DependentUpon>PixelatedPicturesPage.xaml</DependentUpon>
     </Compile>
@@ -156,10 +157,6 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
-    <Page Include="Views\PicturesPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\PixelatedPicturesPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -174,9 +171,18 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
+      <Name>Behaviors SDK %28XAML%29</Name>
+    </SDKReference>
     <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
       <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>
     </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pixelator.Core\Pixelator.Core.csproj">
+      <Project>{15b83e1e-5c05-46ec-a7cc-8694f9713e5e}</Project>
+      <Name>Pixelator.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

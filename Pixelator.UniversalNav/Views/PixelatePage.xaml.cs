@@ -1,5 +1,11 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using Pixelator.UniversalNav.ViewModel;
+using System;
+using System.Diagnostics;
+using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.DataTransfer.ShareTarget;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace Pixelator.UniversalNav.Views
 {
