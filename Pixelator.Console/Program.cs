@@ -27,32 +27,32 @@ namespace Pixelator
         private static void Pixelate(Options options)
         {
             var stopwatch = new Stopwatch();
-            stopwatch.Start();
-            using (var image = Bitmap.FromFile(options.ImagePath))
-            {
-                Console.WriteLine(string.Format("Image size: {0}x{1}", image.Width, image.Height));
-                Console.WriteLine("Pixel size: {0}\n", options.PixelSize);
-                Console.WriteLine("Starting normal...");
-                using (var bitmap = new Bitmap(image))
-                {
-                    var result = Pixelate(bitmap, options.PixelSize);
-                    result.Save(options.ResultPath);
-                }
-            }
-            stopwatch.Stop();
-            Console.WriteLine("Done in: \"{0}\".\n", stopwatch.Elapsed.ToString("c"));
-            stopwatch.Reset();
-            Console.WriteLine("Starting using lockbits...");
-            stopwatch.Start();
-            using (var image = Bitmap.FromFile(options.ImagePath))
-            using (var bitmap = new Bitmap(image))
-            {
-                var result = PixelateLockBits(bitmap, options.PixelSize);
-                result.Save(options.ResultPath);
-            }
-            stopwatch.Stop();
-            Console.WriteLine("Done in: \"{0}\".\n", stopwatch.Elapsed.ToString("c"));
-            stopwatch.Reset();
+            //stopwatch.Start();
+            //using (var image = Bitmap.FromFile(options.ImagePath))
+            //{
+            //    Console.WriteLine(string.Format("Image size: {0}x{1}", image.Width, image.Height));
+            //    Console.WriteLine("Pixel size: {0}\n", options.PixelSize);
+            //    Console.WriteLine("Starting normal...");
+            //    using (var bitmap = new Bitmap(image))
+            //    {
+            //        var result = Pixelate(bitmap, options.PixelSize);
+            //        result.Save(options.ResultPath);
+            //    }
+            //}
+            //stopwatch.Stop();
+            //Console.WriteLine("Done in: \"{0}\".\n", stopwatch.Elapsed.ToString("c"));
+            //stopwatch.Reset();
+            //Console.WriteLine("Starting using lockbits...");
+            //stopwatch.Start();
+            //using (var image = Bitmap.FromFile(options.ImagePath))
+            //using (var bitmap = new Bitmap(image))
+            //{
+            //    var result = PixelateLockBits(bitmap, options.PixelSize);
+            //    result.Save(options.ResultPath);
+            //}
+            //stopwatch.Stop();
+            //Console.WriteLine("Done in: \"{0}\".\n", stopwatch.Elapsed.ToString("c"));
+            //stopwatch.Reset();
             Console.WriteLine("Starting using lockbits parallel...");
             stopwatch.Start();
             using (var image = Bitmap.FromFile(options.ImagePath))

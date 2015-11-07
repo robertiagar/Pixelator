@@ -151,7 +151,7 @@ namespace Pixelator.UniversalNav.ViewModel
                 byte[] pixels = new byte[pixelStream.Length];
                 await pixelStream.ReadAsync(pixels, 0, pixels.Length);
                 // Save the image file with jpg extension 
-                encoder.SetPixelData(BitmapPixelFormat.Unknown, BitmapAlphaMode.Ignore, (uint)writeableBitmap.PixelWidth, (uint)writeableBitmap.PixelHeight, 120, 120, pixels);
+                encoder.SetPixelData(BitmapPixelFormat.Bgra8, BitmapAlphaMode.Ignore, (uint)writeableBitmap.PixelWidth, (uint)writeableBitmap.PixelHeight, 96, 96, pixels);
                 await encoder.FlushAsync();
             }
         }
